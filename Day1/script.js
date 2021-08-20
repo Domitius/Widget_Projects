@@ -12,5 +12,3 @@ function removeActiveClasses() {
         panel.classList.remove('active');
     });
 }
-
-console.log(panels);
