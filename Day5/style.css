@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  background: url('https://images.unsplash.com/photo-1629431299382-f66160c1a014?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.bg {
+  color: #fff;
+}
+
+.loading-text,
+.text {
+  position: absolute;
+  font-size: 50px;
+  color: #fff;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  opacity: 0.1;
+  visibility: hidden;
+}
+
+.text.active {
+  visibility: inherit;
+  display: block;
+  opacity: 1;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.card {
+  visibility: hidden;
+  width: 70vw;
+  min-height: 30vh;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0vh;
+  opacity: 0.1;
+}
+
+.card.active {
+  visibility: initial;
+  width: 70vw;
+  min-height: 30vh;
+  background-color: #fff;
+  position: absolute;
+  bottom: 7vh;
+  opacity: 1;
+  transition: bottom 1s, opacity 1s ease-in;
+}
