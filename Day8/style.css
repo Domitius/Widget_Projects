@@ -96,7 +96,8 @@ body {
 }
 
 .form-control input:focus + label span,
-.form-control input:valid + label span {
+.form-control input:valid + label span,
+.form-control input:invalid + label span {
   color: lightblue;
   transform: translateY(-30px);
 }
